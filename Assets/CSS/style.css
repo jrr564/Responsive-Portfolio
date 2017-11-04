@@ -22,7 +22,7 @@ body {
 .image {
 	position: relative;
 	float: left;
-	margin: 10px 10px 0 0;
+	margin: 0 auto;
 	width: 200px;
 	height: 200px;
 }
@@ -51,6 +51,7 @@ h1 {
   font-size: 30px;
   line-height: 49px;
   border-bottom: 3px solid #ddd;
+  background-color: #fff;
 }
 
 h2,
@@ -171,6 +172,26 @@ h3,
   border: 1px solid #ddd;
 }
 
+.main-section {
+  background-color: #fff;
+  width: 500px;
+  float: left;
+  padding: 30px;
+  margin-bottom: 0 auto;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.main-contact {
+  background-color: #fff;
+  width: 500px;
+  float: left;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
 #photo {
 	position: relative;
 	float: left;
@@ -273,8 +294,16 @@ input[type=submit] {
 @media screen and (max-width: 980px) {
 	
 	.container {
-		width: 760px;
+		width: 820px;
 	}
+
+  #main-section {
+    width: 60%;
+  }
+
+  #main-contact {
+    width: 500px;
+  }
 
 	#content {
 		width: 60%;
@@ -299,7 +328,7 @@ input[type=submit] {
 
 	.sidebar {
 		width: 100%;
-		clear: right;
+		float: right;
 		max-width: 100%;
 	}
 
@@ -307,10 +336,28 @@ input[type=submit] {
 		width: 50%;
 		height: auto;
 	}
+
+  .main-contact {
+    width: 100%;
+  }
+
+  .main-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 	
 }
 
 @media screen and (max-width: 640px) {
+  
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sidebar {
+    margin-top: 10px;
+  }
 
 	#masthead {
   		position: static;
@@ -327,7 +374,7 @@ input[type=submit] {
 
 	#main-container {
 		width: 95%;
-  		padding-top: 20px;
+  	padding-top: 20px;
 	}
 
 	#logo {
@@ -350,10 +397,28 @@ input[type=submit] {
 	nav a {
 		width: 30%;
 	}
+  .main-section {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .main-contact {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  #content {
+    width: 100%;
+    margin-bottom: 5px;
+  }
 
 	#photo {
 		width: 100%;
 		height: auto;
 	}
+
+  .work {
+    width: 100%;
+  }
 
 }

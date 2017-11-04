@@ -2,14 +2,14 @@
 
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<title>Index</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+<body>
 
-<body background= "assets/images/swirl_pattern.png">
+  <head>
+	 <meta charset="UTF-8">
+	 <title>Contact</title>
+	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
  <header id="masthead">
     <div class="container">
@@ -24,54 +24,38 @@
 
   <div id="main-container" class="container"> 
 		
-		<section id= "content">
-      		
-      		<h1>Contact</h1>
+	<section class="main-contact">
+      <h1>Contact</h1>
 
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+    </form>
 
-			<!--Contact Form with name, email, and message-->
-			<form>
-  				Name<br>
-  				<input type="firstname" name="firstname"> <br>
-  				Email <br>
-  				<input type="email" name="email"> <br>
-  				Message <br>
-  				<textarea type="message" name="message">
-  				</textarea> 
-			</form>
-			
-			<!--Submit button-->
-
-			<button type="button">Submit</button>
-
-		</section>
+	</section>
 		
-		<section id= "connect">
-			
-			<h2>Connect with Me</h2>
-			
-			<!--link to my github-->
-
-			<a href="https://github.com/jrr564">
-				<img id="github" alt="github" src="assets/images/if_github_square_107105.png">
-			</a>
-
-			<!--link to my Linkedin-->
-
-			<a href="https://www.linkedin.com/in/jonathanridewood">
-				<img id="linked" alt="linked" src="assets/images/if_linkedin_square_color_107091.png">
-			</a>
-
-			<!-- link to my Stack Overflor -->
-
-			<a href=https://stackoverflow.com/users/8760641/jonathan-ridewood>
-				<img id="stack" alt="Stack Overflow" src="assets/images/if_overflow_334695.png">
-			</a>
-				
-
-		</section>
-
-	</div>
+	<section class="sidebar">
+	  <div id="connect">
+        <h2>Connect with Me</h2>
+	       <a href="https://github.com/jrr564"><img src="assets/images/if_github_square_107105.png" class="social" alt="GitHub" /></a>
+	        <a href="https://www.linkedin.com/in/jonathanridewood"><img src="assets/images/if_linkedin_square_color_107091.png" class="social" alt="LinkedIn" /></a>
+	        <a href="https://stackoverflow.com/users/8760641/jonathan-ridewood"><img src="assets/images/if_overflow_334695.png" img id="stack" class="social" alt="Stack Overflow" /></a>
+	      </div>
+	</section>
+</div>
 
 <footer>@copyright 2017 Jonathan Ridewood</footer>
 
